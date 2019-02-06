@@ -77,7 +77,7 @@ public class Movie implements Parcelable {
         title = parcel.readString();
         overview = parcel.readString();
         genres = new ArrayList<>();
-        parcel.readList(genres, null);
+        parcel.readTypedList(genres, Genre.CREATOR);
         genreIds = new ArrayList<>();
         parcel.readList(genreIds, null);
         posterPath = parcel.readString();
@@ -97,7 +97,9 @@ public class Movie implements Parcelable {
         dest.writeString(overview);
         dest.writeTypedList(genres);
         dest.writeList(genreIds);
-
+        dest.writeString(posterPath);
+        dest.writeString(backdropPath);
+        dest.writeString(releaseDate);
     }
 
     public static final Parcelable.Creator<Movie> CREATOR = new Parcelable.Creator<Movie>() {

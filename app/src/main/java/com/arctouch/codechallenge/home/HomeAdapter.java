@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.arctouch.codechallenge.R;
-import com.arctouch.codechallenge.details.Details;
+import com.arctouch.codechallenge.details.DetailsActivity;
 import com.arctouch.codechallenge.model.Movie;
 import com.arctouch.codechallenge.util.MovieImageUrlBuilder;
 import com.bumptech.glide.Glide;
@@ -64,7 +64,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
             }
 
             rl_movieItem.setOnClickListener(v -> {
-                Intent intent = new Intent(context, Details.class);
+                Intent intent = new Intent(context, DetailsActivity.class);
                 intent.putExtra("movie", movie);
                 context.startActivity(intent);
             });
