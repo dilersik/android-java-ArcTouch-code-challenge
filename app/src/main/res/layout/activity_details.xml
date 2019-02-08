@@ -13,6 +13,7 @@
             android:id="@+id/tv_Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:textColor="#0061ff"
             android:textSize="22sp" />
 
@@ -20,19 +21,38 @@
             android:id="@+id/tv_Overview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_Genrea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_ReleaseDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_backdropPath"
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_image_placeholder" />
+
+        <ImageView
+            android:id="@+id/iv_posterPath"
+            android:layout_width="fill_parent"
+            android:layout_height="530dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_image_placeholder" />
 
     </LinearLayout>
 </ScrollView>
