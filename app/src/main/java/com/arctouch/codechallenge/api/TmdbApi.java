@@ -26,8 +26,7 @@ public interface TmdbApi {
     Observable<UpcomingMoviesResponse> upcomingMovies(
             @Query("api_key") String apiKey,
             @Query("language") String language,
-            @Query("page") Long page,
-            @Query("region") String region
+            @Query("page") Integer page
     );
 
     @GET("movie/{id}")
